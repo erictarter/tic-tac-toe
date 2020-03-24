@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Game</title>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <div class="start-game-message" id="start-game-message">
+      <p>Start Game</p>
+    </div>
+    <div class="end-game-message" id="end-game-message">
+      <div class="message" id="message"></div>
+      <button class="reset-btn" id="reset-btn">
+        play again?
+      </button>
+    </div>
+    <div class="game-container" id="game-container">
+      <table id="board">
+        <tr>
+          <td>
+            <i class="far fa-circle" id="1"></i>
+          </td>
+          <td>
+            <i class="fas fa-times" id="2"></i>
+          </td>
+          <td>
+            <i class="fas fa-times" id="3"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fas fa-times" id="4"></i>
+          </td>
+          <td>
+            <i class="far fa-circle" id="5"></i>
+          </td>
+          <td>
+            <i class="far fa-circle" id="6"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <i class="far fa-circle" id="7"></i>
+          </td>
+          <td>
+            <i class="far fa-circle" id="8"></i>
+          </td>
+          <td>
+            <i class="fas fa-times" id="9"></i>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

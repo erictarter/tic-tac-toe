@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  background-color: #2d545e;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-shadow: 1px 1px 5px pink;
+  text-align: center;
+}
+
+.start-game-message {
+  background-color: peru;
+  box-shadow: 1px 1px 2px pink;
+  font-size: 20px;
+  border: #dedede 5px solid;
+  border-radius: 5px;
+  padding: 0 12px 0 12px;
+  -webkit-animation: fadeOut 3s;
+  animation: fadeOut 3s;
+}
+
+.start-game-message p {
+  word-spacing: 4px;
+}
+
+.end-game-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 43%;
+  background-color: peru;
+  box-shadow: 1px 1px 2px pink;
+  font-size: 20px;
+  border: #dedede 5px solid;
+  border-radius: 5px;
+  padding: 0 12px 0 12px;
+  display: none;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  transition: all 5s ease-in-out;
+}
+
+.message p {
+  word-spacing: 4px;
+}
+
+.reset-btn {
+  padding: 6px 12px;
+  background-color: #4a4057;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  height: 340px;
+  padding: 30px;
+}
+
+.fas.fa-times {
+  font-size: 60px;
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.far.fa-circle {
+  font-size: 60px;
+  opacity: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.fas.fa-times.marked {
+  font-size: 60px;
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  transition: 2s ease-in;
+}
+
+.far.fa-circle.marked {
+  font-size: 60px;
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  transition: 2s ease;
+}
+
+.far.fa-circle:hover {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.fas.fa-times:hover {
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+
+table {
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+td {
+  border: 6px solid #fff;
+  padding: 20px;
+}
+
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+}
+
+.overlay:target .popup {
+  animation: popup 0.7s;
+}
